@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@mui/icons-material": "^6.1.10",
+    "react-dom": "^18.3.1"
+  }
+}
