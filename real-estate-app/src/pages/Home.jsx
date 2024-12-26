@@ -28,13 +28,13 @@ const Home = () => {
                 {product.description}
               </Typography>
               <Typography variant="h6" sx={{ fontSize: { xs: "1.2rem", sm: "1.4rem" } }}>
-                ${product.price}
+                £{product.price}
               </Typography>
               <Button 
                 fullWidth
                 variant="contained"
                 color="primary"
-                onClick={() => addToCart(product)}
+                onClick={() => addToCart(product)}                 //Event Handler on Click
                 sx={{ marginTop: 2 }}
               >
                 Add to Cart

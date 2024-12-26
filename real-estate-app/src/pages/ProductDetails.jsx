@@ -21,7 +21,7 @@ const ProductDetails = () => {
             {product.description}
           </Typography>
           <Typography variant="h5" sx={{ marginTop: 2 }}>
-            ${product.price}
+            £{product.price}
           </Typography>
           <Button
             variant="contained"
