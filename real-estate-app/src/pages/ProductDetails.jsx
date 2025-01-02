@@ -106,7 +106,9 @@ const ProductDetails = () => {
             sx={{ 
               marginTop: 4,
               textAlign: 'center',
-              justifyContent: "center"
+              justifyContent: "center",
+              display: 'flex',
+              marginLeft: 24,
             }}
           >
             Add to Cart
