@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { AppBar, Toolbar, Button, Container, Box, Typography, IconButton } from "@mui/material";
+import ContactUs from "../pages/ContactUs";
 
 // Nav Bar function with Material UI styling. 
 const Navbar = () => {
@@ -44,6 +45,9 @@ const Navbar = () => {
               </Button>
               <Button color="inherit" component={Link} to="/cart">
                 Shopping Cart
+              </Button>
+              <Button color="inherit" component={Link} to="/contactUs">
+                Contact Us
               </Button>
             </Box>
           </Box>
