@@ -73,3 +73,14 @@ button:focus-visible {
   }
 }
 
+/* Add this to your CSS file (e.g., App.css) */
+.product-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);  /* Zoom-in effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+}
+
+
