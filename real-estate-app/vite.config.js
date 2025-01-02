@@ -1,4 +1,4 @@
-#import { defineConfig } from 'vite';
+import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 // Specify the root directory if index.html is not in the default public directory
