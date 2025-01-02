@@ -1,15 +1,8 @@
-import { defineConfig } from 'vite';
+#import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// Specify the root directory if index.html is not in the default public directory
 export default defineConfig({
+  root: 'public', // or another folder if necessary
   plugins: [react()],
-  build: {
-    assetsInlineLimit: 0, 
-    rollupOptions: {
-      external: ['slick-carousel'],  // Ensures slick-carousel is external 
-    },
-  },
-  optimizeDeps: {
-    include: ['slick-carousel'],  // Ensures slick-carousel is pre-bundled correctly
-  },
 });
