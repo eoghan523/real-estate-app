@@ -12,7 +12,7 @@ const Home = () => {
           <Card sx={{ display: "flex", flexDirection: "column", height: "100%" }}>
             <CardMedia
               component="img"
-              image={product.image}
+              image={product.images[0] || "/images/shai-pal-bGphNIzQ5OA-unsplash.jpg"}
               alt={product.name}
               sx={{
                 height: 200,
@@ -35,7 +35,8 @@ const Home = () => {
                 variant="contained"
                 color="primary"
                 onClick={() => addToCart(product)}                 //Event Handler on Click
-                sx={{ marginTop: 2 }}
+                sx={{ marginTop: 2 , backgroundColor:'teal'
+                }}
               >
                 Add to Cart
               </Button>
@@ -44,8 +45,8 @@ const Home = () => {
                 component={Link}
                 to={`/product/${product.id}`}
                 variant="outlined"
-                color="secondary"
-                sx={{ marginTop: 1 }}
+                color="primary"
+                sx={{ marginTop: 1,  }}
               >
                 View Details
               </Button>

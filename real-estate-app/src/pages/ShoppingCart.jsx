@@ -1,8 +1,11 @@
 import { Button, Typography, Container, Box } from "@mui/material";
 import { useAppContext } from "../context/AppContext";
 
+
+
 const ShoppingCart = () => {
   const { cart, removeFromCart, clearCart } = useAppContext();
+
 
   return (
     <Box
@@ -56,7 +59,7 @@ const ShoppingCart = () => {
               >
                 <Typography variant="body1" sx={{ flex: 1 }}>
                   <img
-                    src={item.image} // Product image URL
+                    src={item.images[0]} // Product image URL
                     alt={item.name} // Alt text for accessibility
                     style={{
                       width: '100px', // Adjust the width of the image
